@@ -1,1 +1,1 @@
-# datalake-analytics-platform
+# Data Lake House Analytics Platform
