@@ -122,11 +122,78 @@ services:
     volumes:
       - shared-workspace:/opt/workspace
 
+  ####### MySQL
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: nebula_pw
+      MYSQL_DATABASE: nebula_db
+      MYSQL_USER: nebula_user
+      MYSQL_PASSWORD: nebula_pw
+    networks:
+      - bds-network
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  ####### Apache Superset
+  superset:
+    build: ./superset
+    container_name: superset
+    restart: always
+    environment:
+      - SUPERSET_DATABASE_URI=mysql://root:nebula_pw@mysql/nebula_db
+      - SUPERSET_LOAD_EXAMPLES=yes
+      - WTF_CSRF_ENABLED = False
+      - SUPERSET_SECRET_KEY=53wclGt2t78CLV3O0meSL8K6ivdSbpkQeDyOSLbPLuMqHY/r7HwuyLq7
+      - SECRET_KEY=53wclGt2t78CLV3O0meSL8K6ivdSbpkQeDyOSLbPLuMqHY/r7HwuyLq7
+      - ADMIN_USERNAME=admin
+      - ADMIN_EMAIL=admin@superset.com
+      - ADMIN_PASSWORD=admin
+    networks:
+      - bds-network
+    ports:
+      - 8088:8088
+    volumes:
+      - superset-data:/app/superset
+    depends_on:
+      - mysql
+
+  # PROMETHEUS
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - 9090:9090
+    restart: unless-stopped
+    volumes:
+      - ./prometheus:/etc/prometheus
+      - prom_data:/prometheus
+  # GRAFANA
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=grafana
+    volumes:
+      - ./grafana:/etc/grafana/provisioning/datasources
 
 volumes:
   hadoop_namenode:
   hadoop_datanode:
   hadoop_historyserver:
+  mysql-data:
+  superset-data:
+  prom_data:
   shared-workspace:
     name: "hadoop-distributed-file-system"
     driver: local

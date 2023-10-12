@@ -2,6 +2,8 @@
 cd hadoop/base && docker build . -t hadoop-base && cd ../..
 #Create spark base image
 cd spark/base && docker build . -t spark-base && cd ../..
+#Build Docker images
+docker compose build
 #Start all containers
 docker compose up -d
 
