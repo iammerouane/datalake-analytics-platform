@@ -1,0 +1,31 @@
+CustomerKey,Prefix,FirstName,LastName,BirthDate,MaritalStatus,Gender,EmailAddress,AnnualIncome,TotalChildren,EducationLevel,Occupation,HomeOwner
+1,Mr.,John,Doe,01/01/1990,Single,Male,johndoe@email.com,50000,0,Bachelor's,Engineer,Yes
+2,Mrs.,Alice,Smith,02/12/1988,Married,Female,alicesmith@email.com,60000,2,Master's,Doctor,No
+3,Mr.,Bob,Johnson,11/05/1985,Single,Male,bobjohnson@email.com,55000,1,PhD,Teacher,Yes
+4,Ms.,Carol,White,25/07/1992,Single,Female,carolwhite@email.com,48000,0,Bachelor's,Nurse,No
+5,Mr.,Frank,Green,30/03/1987,Married,Male,frankgreen@email.com,70000,3,High School,Mechanic,Yes
+6,Miss,Jane,Blue,14/04/1995,Single,Female,janeblue@email.com,32000,0,Associate's,Student,No
+7,Mr.,Charlie,Black,19/10/1982,Married,Male,charlieblack@email.com,75000,2,Master's,Lawyer,Yes
+8,Mrs.,Donna,Red,05/08/1980,Married,Female,donnared@email.com,68000,3,Bachelor's,Manager,Yes
+9,Mr.,Eliot,Gray,23/06/1994,Single,Male,eliotgray@email.com,35000,0,High School,Salesperson,No
+10,Ms.,Fiona,Teal,12/09/1989,Single,Female,fionateal@email.com,46000,1,Associate's,Engineer,Yes
+11,Mr.,Gary,Purple,21/11/1981,Married,Male,garypurple@email.com,65000,2,PhD,Architect,No
+12,Mrs.,Hannah,Brown,05/02/1991,Single,Female,hannahbrown@email.com,43000,1,Master's,Designer,Yes
+13,Mr.,Isaac,Olive,14/08/1987,Married,Male,isaacolive@email.com,72000,3,Bachelor's,Developer,No
+14,Ms.,Jessica,Peach,23/03/1985,Single,Female,jessicapeach@email.com,51000,0,High School,Writer,Yes
+15,Mr.,Kenneth,Cyan,03/04/1990,Married,Male,kennethcyan@email.com,54000,1,Associate's,Photographer,No
+16,Miss,Laura,Magenta,09/05/1988,Single,Female,lauramagenta@email.com,39000,0,Bachelor's,Artist,Yes
+17,Mr.,Mike,Yellow,18/07/1986,Married,Male,mikeyellow@email.com,61000,2,Master's,Musician,No
+18,Mrs.,Nora,Pink,02/10/1993,Single,Female,norapink@email.com,42000,1,PhD,Scientist,Yes
+19,Mr.,Oscar,Lime,13/12/1989,Married,Male,oscarlime@email.com,58000,3,Bachelor's,Biologist,No
+20,Ms.,Patricia,Coral,22/01/1990,Single,Female,patriciacoral@email.com,46000,0,High School,Pharmacist,Yes
+21,Mr.,Quentin,Maroon,28/02/1983,Married,Male,quentinmaroon@email.com,64000,2,Associate's,Dentist,No
+22,Mrs.,Rachel,Gold,07/06/1987,Single,Female,rachelgold@email.com,55000,1,Bachelor's,Therapist,Yes
+23,Mr.,Steven,Silver,15/03/1985,Married,Male,stevensilver@email.com,57000,3,Master's,Psychologist,No
+24,Ms.,Tina,Bronze,19/08/1992,Single,Female,tinabronze@email.com,49000,0,PhD,Vet,Yes
+25,Mr.,Ulysses,Platinum,27/04/1990,Married,Male,ulyssesplatinum@email.com,67000,1,Bachelor's,Farmer,No
+26,Miss,Victoria,Ruby,30/09/1988,Single,Female,victoriaruby@email.com,40000,0,Associate's,Chef,Yes
+27,Mr.,Walter,Diamond,10/10/1985,Married,Male,walterdiamond@email.com,69000,2,High School,Pilot,No
+28,Mrs.,Xena,Sapphire,21/05/1982,Single,Female,xenasapphire@email.com,63000,1,Master's,Sailor,Yes
+29,Mr.,Yves,Onyx,12/12/1989,Married,Male,yvesonyx@email.com,59000,3,Bachelor's,Miner,No
+30,Ms.,Zoe,Pearl,01/01/1994,Single,Female,zoepearl@email.com,41000,0,PhD,Librarian,Yes
