@@ -186,6 +186,15 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=grafana
     volumes:
       - ./grafana:/etc/grafana/provisioning/datasources
+  ####### FLASK
+  flask-app:
+    container_name: flask-app
+    restart: always
+    build: ./flask
+    ports:
+      - 5000:5000
+    networks:
+     - bds-network
 
 volumes:
   hadoop_namenode:
